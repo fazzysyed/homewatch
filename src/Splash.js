@@ -28,7 +28,7 @@ class SplashScreen extends React.Component {
     return (
       <View style={styles.container}>
         <ImageBackground
-                  source={{uri:"https://countyhomewatch.com/wp-content/uploads/2021/08/county-home-watch-logo-1.png"}}
+                  source={require("./Assets/countrylogo.png")}
    
           style={styles.image}
           resizeMode="contain"

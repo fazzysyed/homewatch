@@ -47,7 +47,7 @@ export default class Main extends Component {
           }}>
                    <View style={{flexDirection: 'row', marginTop: 5,alignSelf:"center"}}>
                 <Image
-                  source={{uri:"https://countyhomewatch.com/wp-content/uploads/2021/08/county-home-watch-logo-1.png"}}
+                  source={require("./Assets/countrylogo.png")}
                   style={{
                     height: 100,
                     width: "100%",

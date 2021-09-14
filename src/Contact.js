@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import WebView from 'react-native-webview';
 
-const WebViewIos = () => {
+const WebViewIos = ({navigation}) => {
   const [canGoBack, setCanGoBack] = useState(false);
   const [canGoForward, setCanGoForward] = useState(false);
   const [currentUrl, setCurrentUrl] = useState('');
@@ -18,8 +18,7 @@ const WebViewIos = () => {
   const webviewRef = useRef(null);
 
 const  backButtonHandler = () => {
-    console.log('Hello');
-    if (webviewRef.current) webviewRef.current.goBack();
+navigation.goBack()
   };
 
  const frontButtonHandler = () => {
@@ -71,7 +70,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#005698',
   },
   button: {
-    color: 'black',
+    color: '#FFFFFF',
     fontSize: 16,
   },
 });
